@@ -12,10 +12,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "s3-static-site"
   gem.require_paths = ["lib"]
-  gem.version       = "0.2.0"
+  gem.version       = "0.3.0"
 
   # Gem dependencies
-  gem.add_dependency("aws-sdk")
+  gem.add_dependency("aws-sdk", '~> 1.0', '>= 1.12.0')
   gem.add_dependency("capistrano")
   gem.add_dependency("haml")
   gem.add_dependency("mime-types")
